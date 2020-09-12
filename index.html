@@ -4,29 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alquier camper Granada</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"
-      rel="stylesheet"
-    />
+
+  >
+
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Kanit:wght@500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <h1 class="ocultar">Alquiler camper granada</h1>
     <nav class="menu">
-      <ul class="menu_ul">
-        <li class="menu_elemento">
-          <a class="menu_enlace" href="#inicio">Inicio</a>
-        </li>
-        <li class="menu_elemento">
+      <div class="marcador" id="marcador"></div>
+          <a class="menu_enlace" href="#inicio">Inicio</a>      
           <a class="menu_enlace" href="#somos">Quienes somos</a>
-        </li>
-        <li class="menu_elemento"><a class="menu_enlace" href="#">Blog</a></li>
-        <li class="menu_elemento">
-          <a class="menu_enlace" href="#reserva">Reserva</a>
-        </li>
-        <li class="menu_elemento">
-          <a class="menu_enlace" href="#">Contacta</a>
-        </li>
+          <a class="menu_enlace" href="#">Blog</a> 
+          <a class="menu_enlace" href="#reserva">Reserva</a>        
+          <a class="menu_enlace" href="#contacto">Contacta</a>
       </ul>
     </nav>
 
@@ -38,20 +31,21 @@
       src="./img/ian-usher-Af1OMQpuN14-unsplash.jpg"
       alt="volkswagen california t1"
     />
-<div>
+
     <video
       src="./img/intro.mp4"
       id="Video_index"
       class="Video_index"
       autoplay
       loop
-    ></video>
-    <h2 class="titulo_somos">quienes somos</h2></div>
+    />
+    
   </div>
   
 
    
     <section>
+      <h2 class="titulo_somos">quienes somos</h2>
       <article id="somos">
         <div class="somos">
           <div class="p_somos">
@@ -62,36 +56,63 @@
             adipisicing elit. Recusandae dolorum laborum incidunt maiores nobis
             molestias nisi saepe dolore placeat eligendi pariatur, esse aliquam
             debitis alias, excepturi officiis. Minus, tempore a! Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Recusandae dolorum
-            laborum incidunt maiores nobis molestias nisi saepe dolore placeat
-            eligendi pariatur, esse aliquam debitis alias, excepturi officiis.
-            Minus, tempore a!
+         
           </div>
         </div>
       </article>
     </section>
     <section id="reserva">
       <article class="article_alquiler">
-        <div class="div_imagen_alquiler">
-         <!-- <img
+        
+         <img
           class="imagen_alquiler"
           src="./img/caleb-george-iVXfOilGYHA-unsplash.jpg"
-          alt=""
-        />-->
-      </div>
+          alt=" camper"
+        />
+      
         
         <div class="div_titulo_alquiler">
 
-         <!-- <h2 class="titulo_alquiler">!A que estas esperano!</h2>
+        <h2 class="titulo_alquiler">!A que estas esperano!</h2>
           <div class="div_btn_alquiler">
-          <button class="bt_nalquiler">¡Reserva ya!</button></div>--> 
+          <button class="btn_alquiler">¡Reserva ya!</button>
+        </div>
         </div>
        
       </article>
     </section>
+    <section>
+      <h2 class="titulo_contacto">Contactanos</h2>
+      <form  class="formulario" id="contacto">
+    <input type="text" placeholder="Nombre" name="nombre" class="nombre" id="nombre">
+    <input type="email" name="email" id="email" class="email" placeholder="E-mail">
+    <textarea name="comentario" class="comentario" id="comentario" cols="30" rows="10" placeholder="Escribe aquí"></textarea>
+  <button type="submit" class="btn_enviar" id="btn_enviar">enviar</button>
+  <p class="err" id="err"></p>
+  </form>
+    </section>
+  
+<footer class="pie">
+  <div class="div_parafos">
+    <div class="div_tarjetas">
+    <p class="p_candado"><img class="candado" src="./img/icon_lock_close.svg" alt="candado cerrado">pagina  segura</p>
+  
+<ul class="lista_tarjetas">
+  <il><img src="./img/icon_mastercard.svg" alt="tarjeta mastercar"></il>
+  <il><img src="./img/icon_visa.svg" alt="targeta visa"></il>
+  <il><img src="./img/icon_paypal.svg" alt="paypal"></il>
+<ul/></div>
 
+  <p class="sociles">
+    redes sociales
+  </p>
+  </div>
+<p class="copi">
+  © 2020 Camperizaciones Nivar. Todos los derechos reservados
+</p>
+      
+</footer>
    
-    </div>
     <script src="js/main.js"></script>
   </body>
 </html>
