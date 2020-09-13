@@ -11,9 +11,10 @@
   --verdesombra: #25fa25;
   --grisCalendario: #f2f6f5;
   --grisOscuroCalendario: #9faab7;
-  --circuloCalendario: #86d8c9;
+  --circuloCalendario: #f6f629;
   --fontsecundaria: "Montserrat", sans-serif;
   --font: "Amatic SC", cursive;
+  --tamañofuentesecundaria: 3em;
 }
 /*---------------estilos genericos-----------------*/
 html {
@@ -150,7 +151,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f2ed', endColorstr='#cfe5e3', GradientType=1);
 }
 .expandido {
-  height: 900px;
+  height: 1200px;
   -webkit-transition: height 300ms linear;
   -ms-transition: height 300ms linear;
   transition: height 300ms linear;
@@ -213,7 +214,46 @@ body {
 .btn_alquiler:active {
   box-shadow: inset 1px 2px 9px -1px var(--blanco);
 }
+/*-----------------------extension-------------*/
+.div_extension {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-top: 65px;
+}
+.div_calendario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 404px;
+}
+.Alquilar_h3 {
+  font-family: var(--font);
+  font-size: var(--tamañofuentesecundaria);
+  color: var(--amarilloreservar);
+}
 
+.furgoneta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 296px;
+}
+.foto_camper {
+  box-shadow: 0px 0px 6px 1px var(--negro);
+  border-radius: 5px;
+  height: 124px;
+  padding: 5px;
+  margin-bottom: 28px;
+}
+.div_btn_comprar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+}
 /*------------------conatcto ---------------*/
 .titulo_contacto {
   display: flex;
@@ -355,13 +395,13 @@ body {
 /*--------------calendario-------------*/
 .calendario {
   width: 400px;
-  margin-left: auto;
-  margin-right: auto;
   border: 1px solid var(--grisCalendario);
   border-radius: 30px;
   display: flex;
   flex-direction: column;
   justify-items: center;
+  background-color: var(--blanco);
+  box-shadow: 0px 0px 6px 1px var(--negro);
 }
 
 .cabecera {

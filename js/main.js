@@ -3,6 +3,9 @@
 const $marcador = document.getElementById("marcador");
 const $item = document.querySelectorAll("menu_enlace");
 /*------------------ calendario------------------ */
+const $div_calendario = document.getElementById("div_calendario");
+const $divBtnComprar = document.getElementById("divBtnComprar");
+const $furgoneta = document.getElementById("furgoneta");
 const $article_alquiler = document.getElementById("article_alquiler");
 const $calendario = document.getElementById("calendario");
 const $section_calendario = document.getElementById("section_calendario");
@@ -233,9 +236,15 @@ document.addEventListener("click", (e) => {
   if (e.target.id === "btnreserva") {
     if (contolVisivilidad) {
       $calendario.classList.replace("visible", "oculto");
+      $furgoneta.classList.replace("visible", "oculto");
+      $divBtnComprar.classList.replace("visible", "oculto");
+      $div_calendario.classList.replace("visible", "oculto");
       contolVisivilidad = false;
     } else {
       $calendario.classList.replace("oculto", "visible");
+      $furgoneta.classList.replace("oculto", "visible");
+      $divBtnComprar.classList.replace("oculto", "visible");
+      $div_calendario.classList.replace("oculto", "visible");
       contolVisivilidad = true;
     }
 
