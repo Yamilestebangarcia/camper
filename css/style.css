@@ -149,7 +149,23 @@ body {
   );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f2ed', endColorstr='#cfe5e3', GradientType=1);
 }
+.expandido {
+  height: 900px;
+  -webkit-transition: height 300ms linear;
+  -ms-transition: height 300ms linear;
+  transition: height 300ms linear;
+}
 
+.visible {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 1500ms, visibility 1500ms;
+  transition: opacity 1500ms, visibility 1500ms;
+}
+.oculto {
+  opacity: 0;
+  visibility: hidden;
+}
 .imagen_alquiler {
   height: 400px;
   float: left;
@@ -197,23 +213,7 @@ body {
 .btn_alquiler:active {
   box-shadow: inset 1px 2px 9px -1px var(--blanco);
 }
-/*-----------------seccion calendario--------------*/
-.seccion_calendario {
-  display: none;
-}
-.visible_seccion {
-  display: flexbox;
-}
-.calendario {
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: opacity 1500ms, visibility 1500ms;
-  transition: opacity 1500ms, visibility 1500ms;
-}
-.visible {
-  visibility: visible;
-  opacity: 1;
-}
+
 /*------------------conatcto ---------------*/
 .titulo_contacto {
   display: flex;

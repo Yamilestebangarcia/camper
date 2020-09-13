@@ -3,6 +3,7 @@
 const $marcador = document.getElementById("marcador");
 const $item = document.querySelectorAll("menu_enlace");
 /*------------------ calendario------------------ */
+const $article_alquiler = document.getElementById("article_alquiler");
 const $calendario = document.getElementById("calendario");
 const $section_calendario = document.getElementById("section_calendario");
 const $principal = document.getElementById("principal");
@@ -196,7 +197,7 @@ document.addEventListener("keyup", (e) => {
     }
   }
 });
-let control = true;
+let contolVisivilidad = false;
 document.addEventListener("click", (e) => {
   //calendario boto izquierda
   if (e.target.id === "izquierda") {
@@ -230,22 +231,14 @@ document.addEventListener("click", (e) => {
   }
   //desplegar calendario
   if (e.target.id === "btnreserva") {
-    if (control) {
-      $section_calendario.classList.replace(
-        "seccion_calendario",
-        "visible_seccion"
-      );
-      control = false;
+    if (contolVisivilidad) {
+      $calendario.classList.replace("visible", "oculto");
+      contolVisivilidad = false;
     } else {
-      $section_calendario.classList.replace(
-        "visible_seccion",
-        "seccion_calendario"
-      );
-      control = true;
+      $calendario.classList.replace("oculto", "visible");
+      contolVisivilidad = true;
     }
 
-    setTimeout(() => {
-      $calendario.classList.toggle("visible");
-    }, 0);
+    $article_alquiler.classList.toggle("expandido");
   }
 });
