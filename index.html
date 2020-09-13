@@ -7,8 +7,7 @@
 
   >
 
-  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Kanit:wght@500&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Kanit:wght@500&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -75,10 +74,42 @@
 
         <h2 class="titulo_alquiler">!A que estas esperano!</h2>
           <div class="div_btn_alquiler">
-          <button class="btn_alquiler">¡Reserva ya!</button>
+          <button class="btn_alquiler" id="btnreserva">¡Reserva ya!</button>
         </div>
         </div>
        
+      </article>
+    </section>
+    <section class="seccion_calendario" id="section_calendario">
+      <article>
+        <div class="calendario" id="calendario">
+          <div class="cabecera">
+            <img
+              class="icon"
+              id="izquierda"
+              src="./img/espalda.svg"
+              alt="flecha izquierda"
+            />
+    
+            <p class="mes_cabecera" id="mes"></p>
+            <img
+              class="icon"
+              id="derecha"
+              src="./img/cheuron.svg"
+              alt="flecha derecha"
+            />
+          </div>
+          <ul class="semanas">
+            <li class="nombre_semanas">L</li>
+            <li class="nombre_semanas">M</li>
+            <li class="nombre_semanas">X</li>
+            <li class="nombre_semanas">J</li>
+            <li class="nombre_semanas">V</li>
+            <li class="nombre_semanas">S</li>
+            <li class="nombre_semanas">D</li>
+          </ul>
+          <ul class="principal" id="principal"></ul>
+        </div>
       </article>
     </section>
     <section>
