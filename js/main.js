@@ -1,8 +1,13 @@
 /*-------------variables-------------- */
+/*-----------------------menu--------------------*/
+const $cerrar = document.getElementById("cerrar");
+const $haburgesa = document.getElementById("hamburguesa");
+const $menu = document.getElementById("menu");
 /*---------------indicador menu--------------- */
 const $marcador = document.getElementById("marcador");
 const $item = document.querySelectorAll("menu_enlace");
 /*------------------ calendario------------------ */
+const $div_extension = document.getElementById("div_extension");
 const $div_calendario = document.getElementById("div_calendario");
 const $divBtnComprar = document.getElementById("divBtnComprar");
 const $furgoneta = document.getElementById("furgoneta");
@@ -201,6 +206,7 @@ document.addEventListener("keyup", (e) => {
   }
 });
 let contolVisivilidad = false;
+let controlmenu = false;
 document.addEventListener("click", (e) => {
   //calendario boto izquierda
   if (e.target.id === "izquierda") {
@@ -235,12 +241,14 @@ document.addEventListener("click", (e) => {
   //desplegar calendario
   if (e.target.id === "btnreserva") {
     if (contolVisivilidad) {
+      $div_extension.classList.add("ocultoextension");
       $calendario.classList.replace("visible", "oculto");
       $furgoneta.classList.replace("visible", "oculto");
       $divBtnComprar.classList.replace("visible", "oculto");
       $div_calendario.classList.replace("visible", "oculto");
       contolVisivilidad = false;
     } else {
+      $div_extension.classList.remove("ocultoextension");
       $calendario.classList.replace("oculto", "visible");
       $furgoneta.classList.replace("oculto", "visible");
       $divBtnComprar.classList.replace("oculto", "visible");
@@ -250,4 +258,18 @@ document.addEventListener("click", (e) => {
 
     $article_alquiler.classList.toggle("expandido");
   }
+  if (e.target.dataset.id === "hamburguesa") {
+    if (controlmenu) {
+    } else {
+      $haburgesa.classList.replace("hamburguesa", "nohamburguesa");
+      $menu.classList.replace("menu", "visiblemenu");
+      $cerrar.classList.replace("cerrar", "cerrarvisible");
+    }
+  }
+  if (e.target.id === "cerrar") {
+    $cerrar.classList.replace("cerrarvisible", "cerrar");
+    $haburgesa.classList.replace("nohamburguesa", "hamburguesa");
+    $menu.classList.replace("visiblemenu", "menu");
+  }
+  console.log(e.target);
 });

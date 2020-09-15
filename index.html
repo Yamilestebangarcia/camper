@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alquier camper Granada</title>
 
-  >
+  
 
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Kanit:wght@500&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1 class="ocultar">Alquiler camper granada</h1>
-    <nav class="menu">
+    <h1 class="oculto">Alquiler camper granada</h1>
+    <nav class="menu" id="menu">
+      <div class="div_cerrar" id="divCerrar"><img class="cerrar" id="cerrar" src="./img/cerrar.svg" alt="boton cerrar"></div>
+      
+      <div class="hamburguesa" id="hamburguesa" data-id="hamburguesa" ><img data-id="hamburguesa" src="./img/menu-abierto.svg" alt="boton menu"></div>
       <div class="marcador" id="marcador"></div>
           <a class="menu_enlace" href="#inicio">Inicio</a>      
           <a class="menu_enlace" href="#somos">Quienes somos</a>
-          <a class="menu_enlace" href="#">Blog</a> 
           <a class="menu_enlace" href="#reserva">Reserva</a>        
           <a class="menu_enlace" href="#contacto">Contacta</a>
-     
+          <a class="menu_enlace" href="#">Login</a> 
     </nav>
 
   <p class="titulo" id="inicio">Viaja, no te arrepentiras</p>
@@ -44,8 +46,9 @@
 
    
     <section>
-      <h2 class="titulo_somos">quienes somos</h2>
+     
       <article id="somos">
+         <h2 class="titulo_somos">quienes somos</h2>
         <div class="somos">
           <div class="p_somos">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
@@ -74,10 +77,10 @@
 
         <h2 class="titulo_alquiler">!A que estas esperano!</h2>
           <div class="div_btn_alquiler">
-          <button class="btn_alquiler" id="btnreserva">¡Reserva ya!</button>
+          <button class="btn_reservar" id="btnreserva">¡Reserva ya!</button>
         </div>
         </div>
-        <div class="div_extension">
+        <div class="div_extension ocultoextension" id="div_extension">
           <div class="div_calendario oculto"  id="div_calendario">
           <h3 class="Alquilar_h3">Selecciona los días</h3>
            <div class="calendario oculto" id="calendario">
