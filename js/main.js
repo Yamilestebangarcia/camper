@@ -240,6 +240,8 @@ document.addEventListener("click", (e) => {
   }
   //desplegar calendario
   if (e.target.id === "btnreserva") {
+    $furgoneta.classList.toggle("no_furgoneta");
+    $div_calendario.classList.toggle("no_div_calendario");
     if (contolVisivilidad) {
       $div_extension.classList.add("ocultoextension");
       $calendario.classList.replace("visible", "oculto");
@@ -271,5 +273,4 @@ document.addEventListener("click", (e) => {
     $haburgesa.classList.replace("nohamburguesa", "hamburguesa");
     $menu.classList.replace("visiblemenu", "menu");
   }
-  console.log(e.target);
 });

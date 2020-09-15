@@ -225,6 +225,7 @@ body {
   cursor: pointer;
   box-shadow: 2px 2px 6px 10px var(--blanco);
   border: 0px solid transparent;
+  margin-bottom: 25px;
 }
 .btn_alquiler {
   margin-top: 0;
@@ -239,11 +240,9 @@ body {
   width: 100%;
   grid-row: 2;
   grid-column: 1 / span 2;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-
   padding-top: 65px;
 }
 .ocultoextension {
@@ -258,6 +257,9 @@ body {
   margin-right: 30px;
   margin-left: 30px;
 }
+.no_div_calendario {
+  width: 0px;
+}
 .Alquilar_h3 {
   font-family: var(--font);
   font-size: var(--tamañofuentesecundaria);
@@ -271,6 +273,9 @@ body {
   align-items: center;
   width: 296px;
   margin-bottom: 40px;
+}
+.no_furgoneta {
+  width: 0px;
 }
 .foto_camper {
   box-shadow: 0px 0px 6px 1px var(--negro);
@@ -288,7 +293,7 @@ body {
   margin-left: 30px;
   margin-bottom: 27px;
 }
-/*------------------conatcto ---------------*/
+/*------------------contacto ---------------*/
 .titulo_contacto {
   display: flex;
   text-align: center;
