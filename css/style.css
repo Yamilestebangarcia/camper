@@ -96,7 +96,7 @@ body {
   display: grid;
   grid-template-columns: 30% 70%;
   width: 100%;
-  height: 300px;
+  height: auto;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -616,11 +616,11 @@ body {
     position: fixed;
     top: 0px;
     left: 500px;
-    width: 50px;
+    width: 40px;
   }
   .cerrarvisible {
     display: block;
-    width: 48px;
+    width: 32px;
     z-index: 999999;
   }
   .div_cerrar {
@@ -632,12 +632,7 @@ body {
     width: 300px;
   }
 }
-@media only screen and (max-width: 525px) {
-  .somos {
-    height: auto;
-    margin-bottom: 10px;
-  }
-}
+
 @media only screen and (max-width: 525px) {
   .titulo {
     font-size: 2.6em;
@@ -678,7 +673,13 @@ body {
     font-size: 1em;
   }
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 395px) {
+  .oculto {
+    height: 0;
+  }
+  .imagen_alquiler {
+    width: 270px;
+  }
   .calendario {
     width: 250px;
   }
