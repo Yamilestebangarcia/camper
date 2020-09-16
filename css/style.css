@@ -678,15 +678,40 @@ body {
     font-size: 1em;
   }
 }
-/* @media only screen and (max-width: 525px) {
-
-  
-  
+@media only screen and (max-width: 360px) {
   .calendario {
-    width: 300px;
+    width: 250px;
   }
-  .mes_cabecera {
-    font-size: 1.2em;
 
+  .mes_cabecera {
+    font-size: 1em;
+  }
+  .dia {
+    padding: 7px;
+  }
+  .nombre,
+  .email,
+  .comentario {
+    width: 230px;
+    margin-bottom: 30px;
+    padding: 2px 14px;
+    font-size: 1.6em;
+  }
+  .div_tarjetas {
+    display: none;
+  }
+  .div_sociales {
+    justify-content: center;
+    margin-right: 0;
+    width: 100%;
+  }
+  .sociles {
+    margin-left: 0;
+  }
+  .lista_social {
+    justify-content: center;
+  }
+  .copi {
+    font-size: 0.6em;
+  }
 }
- */
