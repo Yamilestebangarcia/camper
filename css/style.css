@@ -529,16 +529,25 @@ body {
     grid-template-columns: 100%;
   }
   .imagen_alquiler {
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
     grid-row: 1;
     grid-column: 1;
-    width: 100%;
   }
 
   .div_titulo_alquiler {
     grid-row: 2;
     grid-column: 1;
   }
+  .titulo_alquiler {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px 50px 50px 50px;
+  }
   .div_extension {
+    padding: 0;
     grid-row: 3;
     grid-column: 1;
   }
@@ -546,7 +555,7 @@ body {
     margin-bottom: 55px;
   }
   .expandido {
-    height: 3000px;
+    height: 2450px;
   }
   /*cambio el menu*/
   .visiblemenu {
@@ -582,8 +591,8 @@ body {
     padding: 20px 0;
     text-decoration: none;
     color: var(--negro);
-    font-size: 2em;
-    width: 80%;
+    font-size: 1.6em;
+    width: 60%;
     text-align: center;
   }
 
@@ -601,21 +610,49 @@ body {
   }
   .hamburguesa {
     border-radius: 10px;
-    padding: 12px;
+    padding: 8px;
     background: rgba(242, 246, 245, 0.6);
     display: block;
     position: fixed;
     top: 0px;
     left: 500px;
-    width: 83px;
+    width: 50px;
   }
   .cerrarvisible {
     display: block;
     width: 48px;
+    z-index: 999999;
   }
   .div_cerrar {
     position: fixed;
     left: 0px;
     top: 0px;
+  }
+  .comentario {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 525px) {
+  .somos {
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 525px) {
+  .p_candado {
+    font-size: 0.8em;
+  }
+  .sociales {
+    font-size: 0.8em;
+  }
+  .tarjeta {
+    width: 35px;
+  }
+  .social {
+    width: 32px;
+  }
+  .copi {
+    margin-top: 14px;
+    font-size: 0.8em;
   }
 }
