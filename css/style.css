@@ -639,6 +639,15 @@ body {
   }
 }
 @media only screen and (max-width: 525px) {
+  .titulo {
+    font-size: 2.6em;
+  }
+  .titulo_somos {
+    margin-bottom: 0;
+  }
+  .somos {
+    padding-top: 10px;
+  }
   .p_candado {
     font-size: 0.8em;
   }
@@ -655,4 +664,29 @@ body {
     margin-top: 14px;
     font-size: 0.8em;
   }
+  /*calendario*/
+  .calendario {
+    width: 300px;
+  }
+  .mes_cabecera {
+    font-size: 1.4em;
+  }
+  .nombre_semanas {
+    font-size: 1.2em;
+  }
+  .dia {
+    font-size: 1em;
+  }
 }
+/* @media only screen and (max-width: 525px) {
+
+  
+  
+  .calendario {
+    width: 300px;
+  }
+  .mes_cabecera {
+    font-size: 1.2em;
+
+}
+ */
