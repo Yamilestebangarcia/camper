@@ -38,9 +38,18 @@ let respuestaError = [
   "Introduzca al menos 3 caracteres",
   "introduzca un email correcto",
   "Introduzca al menos 10 caracteres",
+  "Intoduzca una contraseña de al menos 6 caracteres",
 ];
 let controlrepetirerr = false;
 let controlErrores = [false, false, false];
+/*-----------------modal----------------------*/
+const $login = document.getElementById("login");
+const $modal = document.getElementById("modal");
+const $ventana = document.getElementById("ventana");
+const $password_modal = document.getElementById("password_modal");
+const $nombre_modal = document.getElementById("nombre_modal");
+const $inicio = document.getElementById("inicio_mondal");
+const $cancelar = document.getElementById("cancelar");
 /*---------------------------funciones--------------------*/
 /*--------------indicador menu------------ */
 const indicador = (e) => {
@@ -48,16 +57,22 @@ const indicador = (e) => {
   $marcador.style.width = e.offsetWidth + "px";
 };
 /*-------------------formulario-------------*/
-const valido = (e, i) => {
+const valido = (e, i, c = true) => {
   e.target.classList.remove("novalido");
   e.target.classList.add("valido");
-  controlErrores[i] = true;
+  if (c) {
+    controlErrores[i] = true;
+  } else {
+  }
 };
 
-const novalido = (e, i) => {
+const novalido = (e, i, c = true) => {
   e.target.classList.remove("valido");
   e.target.classList.add("novalido");
-  controlErrores[i] = false;
+  if (c) {
+    controlErrores[i] = false;
+  } else {
+  }
 };
 const validarform = (e) => {
   e.preventDefault();
@@ -204,6 +219,20 @@ document.addEventListener("keyup", (e) => {
       novalido(e, 2);
     }
   }
+  if (e.target.id === "nombre_modal") {
+    if (e.target.value.length > 2) {
+      valido(e, 0);
+    } else {
+      novalido(e, 0);
+    }
+  }
+  if (e.target.id === "password_modal") {
+    if (e.target.value.length > 5) {
+      valido(e, 3, false);
+    } else {
+      novalido(e, 3, false);
+    }
+  }
 });
 let contolVisivilidad = false;
 let controlmenu = false;
@@ -273,4 +302,25 @@ document.addEventListener("click", (e) => {
     $haburgesa.classList.replace("nohamburguesa", "hamburguesa");
     $menu.classList.replace("visiblemenu", "menu");
   }
+
+  if (e.target.id === "login") {
+    e.preventDefault();
+    $modal.classList.replace("none", "modal");
+    $ventana.classList.replace("none", "ventana");
+    $nombre_modal.classList.replace("none", "input");
+    $password_modal.classList.replace("none", "input");
+    $inicio.classList.replace("none", "btnmodal");
+    $cancelar.classList.replace("none", "btnmodal");
+  }
+  if (e.target.id === "cancelar") {
+    e.preventDefault();
+    $modal.classList.replace("modal", "none");
+    $ventana.classList.replace("ventana", "none");
+    $nombre_modal.classList.replace("input", "none");
+    $password_modal.classList.replace("input", "none");
+    $inicio.classList.replace("btnmodal", "none");
+    $cancelar.classList.replace("btnmodal", "none");
+  }
+
+  console.log(e.target);
 });

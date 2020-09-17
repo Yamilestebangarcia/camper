@@ -3,15 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alquier camper Granada</title>
-
-  
+    <title>Alquier camper Granada</title>  
 
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Kanit:wght@500&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <h1 class="oculto">Alquiler camper granada</h1>
+   
     <nav class="menu" id="menu">
       <div class="div_cerrar" id="divCerrar"><img class="cerrar" id="cerrar" src="./img/cerrar.svg" alt="boton cerrar"></div>
       
@@ -20,8 +19,8 @@
           <a class="menu_enlace" href="#inicio">Inicio</a>      
           <a class="menu_enlace" href="#somos">Quienes somos</a>
           <a class="menu_enlace" href="#reserva">Reserva</a>        
-          <a class="menu_enlace" href="#contacto">Contacta</a>
-          <a class="menu_enlace" href="#">Login</a> 
+          <a class="menu_enlace" href="#s_contacto">Contacta</a>
+          <a class="menu_enlace" href="#" id="login">Login</a> 
     </nav>
 
   <p class="titulo" id="inicio">Viaja, no te arrepentiras</p>
@@ -127,7 +126,7 @@
       </article>
     </section>
     <section>
-      <h2 class="titulo_contacto">Contactanos</h2>
+      <h2 class="titulo_contacto" id="s_contacto">Contactanos</h2>
       <form  class="formulario" id="contacto">
     <input type="text" placeholder="Nombre" name="nombre" class="nombre" id="nombre">
     <input type="text" name="email" id="email" class="email" placeholder="E-mail">
@@ -141,7 +140,17 @@
 
   </form>
     </section>
-  
+  <div class="none" id="modal">
+    <form class="none" id="ventana">
+      <input type="text" class="none" id="nombre_modal" placeholder="nombre">
+      <input type="password" placeholder="contraseña" id="password_modal" class="none">
+      <div class="container_btn">
+        <button class="none" id="inicio_mondal">inicio sesion</button>
+      <button class="none" id="cancelar">cancelar</button>
+      </div>
+      
+    </form>
+  </div>
 <footer class="pie">
   <div class="div_parafos">
     <div class="div_tarjetas">

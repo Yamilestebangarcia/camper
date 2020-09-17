@@ -496,6 +496,60 @@ body {
   background-color: var(--circuloCalendario);
   border-radius: 50%;
 }
+.none {
+  display: none;
+}
+.modal {
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.ventana {
+  width: 400px;
+  height: 300px;
+  background-color: var(--blanco);
+  box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  border-radius: 30px;
+}
+.container_btn {
+  display: flex;
+  justify-content: space-evenly;
+}
+.btnmodal {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: var(--blanco);
+  border: none;
+  box-shadow: 1px 1px 6px 0px var(--negro);
+  padding: 2px 13px;
+  border-radius: 12px;
+  font-size: 1.6em;
+  cursor: pointer;
+}
+.input {
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 3px;
+  font-size: 1.4em;
+}
+.input:active {
+  box-shadow: inset 1px 1px 6px 0px var(--negro);
+}
 /*-----------------------------media querys----------------------*/
 
 @media only screen and (max-width: 1280px) {
