@@ -33,25 +33,65 @@ body {
   user-select: none;
 }
 /*--------------navegacion-------------*/
+.menusomos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: var(--blanco);
+  width: 100%;
+  height: 29px;
+}
+.h2_menu {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 4%;
+  font-size: 1.5em;
+}
+.lenguaje {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 4%;
+  font-size: 1.2em;
+}
+.div_logo {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 29px;
+  background-color: #26a6cffc;
+  height: 81px;
+  width: 100%;
+}
+.logo {
+  margin-left: 3%;
+  height: 60px;
+}
+.p_nombre {
+  margin-left: 100px;
+  font-size: 2em;
+}
 .menu {
   background-color: var(--blanco);
-  height: 70px;
+  height: 38px;
   position: fixed;
-  top: 0;
+  top: 111px;
   width: 100%;
   display: flex;
-  border-bottom: 1px solid var(--negro);
+  box-shadow: 0 3px 11px 0px black;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   z-index: 100;
 }
 
 .menu_enlace {
   position: relative;
-  margin: 0 20px;
+  margin: 0px 34px;
   text-decoration: none;
-  color: var(--negro);
-  font-size: 2em;
+  color: var(--grisOscuroCalendario);
+  font-size: 1.8em;
 }
 .hamburguesa {
   display: none;
